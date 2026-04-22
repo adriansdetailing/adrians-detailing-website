@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div>
             <img
-              src="/manus-storage/C9BEE638-A35E-401B-AE9F-12037BC0293D_2c589ef7.PNG"
+              src="/images/logo.PNG"
               alt="Adrian's Detailing Logo"
               className="h-16 w-auto mb-4"
             />

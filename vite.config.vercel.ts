@@ -1,0 +1,24 @@
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
+import { defineConfig } from "vite";
+
+/**
+ * Clean Vite config for Vercel deployment.
+ * Removes all Manus-specific plugins (vitePluginManusRuntime, vitePluginManusDebugCollector, vitePluginStorageProxy).
+ * Images are served from client/public/images/ as static assets.
+ */
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(import.meta.dirname, "client", "src"),
+      "@shared": path.resolve(import.meta.dirname, "shared"),
+    },
+  },
+  root: path.resolve(import.meta.dirname, "client"),
+  build: {
+    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    emptyOutDir: true,
+  },
+});

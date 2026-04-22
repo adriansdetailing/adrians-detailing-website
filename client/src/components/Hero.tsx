@@ -29,7 +29,7 @@ export default function Hero() {
             {/* Logo Image - Large and Prominent */}
             <div className="relative w-full flex justify-center mb-8">
               <img
-                src="/manus-storage/C9BEE638-A35E-401B-AE9F-12037BC0293D_a43f1738.PNG"
+                src="/images/logo_hero.PNG"
                 alt="Adrian's Detailing Logo"
                 className="w-80 h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl"
               />
